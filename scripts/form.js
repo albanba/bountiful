@@ -9,9 +9,10 @@ function displayForm(){
   
     
     const inputs = document.getElementById("fruitForm").elements;
-    const inputByIndex = inputs[0];
     
-    console.log(inputs[0].value);
+    localStorage.setItem("Form", inputs);
+    
+    
 
 
 
