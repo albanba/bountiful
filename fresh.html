@@ -42,7 +42,7 @@
 </nav>
 
 <main>
-    <form id="fruitForm" onsubmit ="return false"> 
+    <form name="fruitForm" id="fruitForm"> 
         <label>First Name*<input id="name" type="text" name="fname" required></label>
         <label>Email*<input id= "email" type="email" name="email" placeholder="someone@gmail.com" required></label>
         <label>Cell Phone<input id="phone" type="tel" name="phone" placeholder="1235551234" required></label>
@@ -61,8 +61,10 @@
             
         <textarea name="instructions" id="instructions" cols="30" rows="10"></textarea>
 
-        <label><input id ='submit' type="submit" value="Order Now"></label>
+        <label><input  name ="button" id ='submit' type="submit" value="Order Now"></label>    
     </form>  
+
+    
 
 <div class="order">
 
