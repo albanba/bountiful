@@ -38,3 +38,10 @@ fetch("json/fruit.json")
 
         }
     }
+    opcion1 = document.querySelector('')
+    opcion2 = "Apricot"
+    
+    fruta1 = fruits.filter(fruits.name == opcion1);
+    fruta2 = fruits.filter(fruits.name == opcion2);
+
+    carbs = fruta1.carbohydrates + fruta2.carbohydrates 

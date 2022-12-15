@@ -21,7 +21,7 @@ header{
     justify-content: space-evenly;
     align-items: center;
     border-bottom: solid 1px rgb(177, 174, 174);
-    background-image: url("/images/fruits1200.jpg");
+    background-image: url("images/fruits1200.jpg");
     height: 200px;
     background-position: center;
     background-repeat: no-repeat;

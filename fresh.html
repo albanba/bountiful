@@ -42,10 +42,10 @@
 </nav>
 
 <main>
-    <form> 
+    <form id="fruitForm" onsubmit ="return false"> 
         <label>First Name*<input id="name" type="text" name="fname" required></label>
-        <label>Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
-        <label>Cell Phone<input type="tel" name="phone" placeholder="1235551234" required></label>
+        <label>Email*<input id= "email" type="email" name="email" placeholder="someone@gmail.com" required></label>
+        <label>Cell Phone<input id="phone" type="tel" name="phone" placeholder="1235551234" required></label>
     
         <label>#1 fruit:
             <select name="#1 Fruit" class="option1"></select>
@@ -61,12 +61,12 @@
             
         <textarea name="instructions" id="instructions" cols="30" rows="10"></textarea>
 
-        <label><input id = 'order' type="submit" value="Order Now"></label>
+        <label><input id ='submit' type="submit" value="Order Now"></label>
     </form>  
 
-<p id="caca">
+<div class="order">
 
-</p>
+</div>
     
 </main>
 
