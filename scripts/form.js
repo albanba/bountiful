@@ -130,7 +130,7 @@ function displayOrder(){
     document.querySelector('.order').appendChild(fruit2);
     document.querySelector('.order').appendChild(fruit3);
     document.querySelector('.order').appendChild(instructions);
-    document.querySelector('.order').appendChild(carbs);    
+    // document.querySelector('.order').appendChild(carbs);    
     document.querySelector('.order').appendChild(date);
     document.querySelector('.order').appendChild(button);
     document.querySelector("#edit").addEventListener("click", editOrder);
