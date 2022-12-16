@@ -157,17 +157,12 @@ main{
   }
 
 
-.call_to_action{
-    border: #F19110 solid 2px;
-    border-radius: 10px;
-    box-shadow: 0 0 30px #777;
-}
 
 .call_to_action img{
     width: 100%;
 }
 
-.call_to_action a{
+.call_to_action a, #orderButton{
     padding: 4px;
 	background-color: #11686C;
 	text-decoration: none;
@@ -261,3 +256,20 @@ footer button{
     justify-content: space-evenly;
 }
 
+/* Fresh Page */
+
+#main {
+    display: flex;
+    flex-direction: column;
+}
+
+#fruitForm{
+    display: flex;
+    flex-direction: column;
+}
+
+#fruitForm label, input, textarea{
+    display: block;
+    margin: 10px;
+
+}
