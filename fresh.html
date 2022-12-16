@@ -41,7 +41,7 @@
     </ul>
 </nav>
 
-<main>
+<main id="main">
     <form name="fruitForm" id="fruitForm"> 
         <label>First Name*<input id="name" type="text" name="fname" required></label>
         <label>Email*<input id= "email" type="email" name="email" placeholder="someone@gmail.com" required></label>
@@ -58,17 +58,18 @@
         <label>#3 fruit:
             <select name="#3 Fruit" class="option3"></select>
         </label>           
-            
-        <textarea name="instructions" id="instructions" cols="30" rows="10"></textarea>
+        
+        <label>Special Instructions   
+            <textarea name="instructions" id="instructions" cols="30" rows="10"></textarea>
+        </label>
 
         <label><input  name ="button" id ='submit' type="submit" value="Order Now"></label>    
     </form>  
 
-    
 
-<div class="order">
+    <button id="orderButton">Here is your order</button>
 
-</div>
+
     
 </main>
 
