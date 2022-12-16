@@ -4,29 +4,18 @@ function displayFruits(fruit){}
 
 
 
-json = fetch("json/fruit.json")
-.then(function (response) {
-     return response.json();
+fetch("json/fruit.json")
+  .then(function (response) {
+    return response.json();
   })
-
-const fruits= getData(json)
-  
-function getData (json) {
-     // temporary checking for valid response and data parsing
-    let fruits = json['fruits'];
-    
-    console.table(fruits);
+  .then(function (jsonObject) {
+    // console.table(jsonObject);  // temporary checking for valid response and data parsing
+    const fruits = jsonObject['fruits'];
     fruits.forEach(displayFruits);
-     
     
-    return fruits
-}
+    });
 
-// get_fruits(fruits)
 
-// function get_fruits(fruits){
-//     return fruits
-// }
 
 function displayFruits(fruit) {
         // Create elements to add to the document
@@ -118,15 +107,15 @@ function displayOrder(){
 
    
    
-    let produce1 = fruits.filter(getFruit);
-    // // let produce2 = fruits.filter(fruits.name == localStorage.getItem('Option2'));
-    // // let produce3 = fruits.filter(fruits.name == localStorage.getItem('Option3'));
+    // let produce1 = fruits.filter(getFruit);
+    // // // let produce2 = fruits.filter(fruits.name == localStorage.getItem('Option2'));
+    // // // let produce3 = fruits.filter(fruits.name == localStorage.getItem('Option3'));
 
    
 
-    let carbs = document.createElement('p');
-    carbs.textContent =`Total Carbs: ${produce1.nutrtions}`; 
-        // + produce2.carbohydrates + produce3.carbohydrates}`;
+    // let carbs = document.createElement('p');
+    // carbs.textContent =`Total Carbs: ${produce1.nutrtions}`; 
+    //     // + produce2.carbohydrates + produce3.carbohydrates}`;
     
     let button = document.createElement('button');
     button.setAttribute('id', 'edit');
@@ -154,11 +143,4 @@ function editOrder(){
 
 }
 
-function getFruit(fruit){
-//    if (fruit.name == localStorage.getItem('Option1')){
-    if (fruit.name == 'Apple'){
-    return fruit
-   };
-
-}
 
